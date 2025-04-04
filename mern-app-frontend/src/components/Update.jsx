@@ -33,7 +33,7 @@ const Update = () => {
   const handleUpdate = async(e) =>{
     e.preventDefault();
       const userUpdate = {name, email, age};
-      const response = await fetch(`http://localhost:5000/${id}`,{
+      const response = await fetch(`https://mern-app-backend-e10e.onrender.com/${id}`,{
         method : "PATCH",
         body: JSON.stringify(userUpdate),
         headers: {
