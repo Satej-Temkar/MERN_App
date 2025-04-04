@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState("");
 
   async function getData(){
-    const response = await fetch("http://localhost:5000");
+    const response = await fetch("https://mern-app-backend-e10e.onrender.com");
     const result = await response.json();
 
     if(!response.ok){
