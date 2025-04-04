@@ -20,7 +20,7 @@ const Read = () => {
   }
 
   const deleteData = async (id) =>{
-    const response = await fetch(`http://localhost:5000/${id}`, { method: "DELETE"});
+    const response = await fetch(`https://mern-app-backend-e10e.onrender.com/${id}`, { method: "DELETE"});
 
     const result = await response.json();
 
